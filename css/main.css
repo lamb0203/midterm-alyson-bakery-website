@@ -1,0 +1,249 @@
+/*
+
+This css will allow our pages to behave resposively as defined by our breakpoints
+
+Resources:
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+*/
+/* recalculate element width and height if they have paddings or borders */
+* {
+  box-sizing: border-box; }
+
+/* conatiner css,  mobile first margin */
+.container {
+  margin: 0; }
+
+/* row css, default padding */
+.row {
+  padding: 1rem; }
+
+/*float all columns*/
+[class*="col-"] {
+  float: left; }
+
+/* For mobile phones (default): */
+[class*="col-"], .page-wrapper, .full-width {
+  width: 100%; }
+
+/* make images resposive */
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+/* helper class: clear float effect on parent element, clear all rows by default as well. */
+.clearfix::after, .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.menu ul > li {
+  width: 100%; }
+
+.top.menu ul > li a {
+  font-size: 1rem; }
+
+.logo {
+  width: 70%; }
+
+h1.larger-font {
+  font-size: 1.4rem; }
+
+h2.larger-font {
+  font-size: 1.2rem; }
+
+/*Desktop breakpoint*/
+@media only screen and (min-width: 768px) {
+  /* styles For desktop: */
+  .container {
+    margin: 0 2rem; }
+  .page-wrapper {
+    max-width: 80rem; }
+  .menu ul > li,
+  .logo {
+    width: 250px; }
+  .top.menu ul > li a {
+    font-size: 1.4rem; }
+  h1.larger-font {
+    font-size: 2.8rem; }
+  h2.larger-font {
+    font-size: 2rem; }
+  .col-1 {
+    width: 8.33%; }
+  .col-2 {
+    width: 16.66%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.33%; }
+  .col-5 {
+    width: 41.66%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.33%; }
+  .col-8 {
+    width: 66.66%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.33%; }
+  .col-11 {
+    width: 91.66%; }
+  .col-12 {
+    width: 100%; } }
+
+/* Global Sass variable */
+/*
+
+This css will allow our pages to have color and a fancy appearance
+
+*/
+/* reset body margin/pagging and set default font*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8; }
+
+header, aside, nav, article, footer {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #eb8087; }
+
+a {
+  color: #DF744A;
+  text-decoration: none; }
+
+.logo-wrapper {
+  background-image: url("../img/banners/logo-background.jpg"); }
+
+/*style for card items*/
+.card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  border-bottom: 2px solid #f5b2b6;
+  background-color: #ffffff;
+  margin: 10px; }
+
+.card img {
+  border-radius: 3px 3px 0 0; }
+
+.card .caption {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center; }
+
+.card .content {
+  font-size: 14px;
+  padding: 30px; }
+
+.card.contact-info {
+  padding: 10px;
+  text-align: center; }
+
+.card.shrink {
+  margin: 40px; }
+
+/*style for form inputs*/
+.form input, .form textarea {
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #eb8087; }
+
+.button {
+  border: none;
+  background-color: #ef2525;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer; }
+
+/*general menu css*/
+.menu ul {
+  padding: 0;
+  list-style: none; }
+
+.menu ul > li {
+  padding: 1rem;
+  float: left;
+  display: block; }
+
+.top.menu ul > li a, .bottom.menu ul > li a {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: white;
+  display: block; }
+
+/* lets make top and bottom menu look a bit different*/
+.top.menu ul > li a:hover, .top.menu ul > li a.active {
+  color: #8FD8D2; }
+
+.top.menu {
+  background-color: #8FD8D2; }
+
+.bottom.menu {
+  background-color: #8FD8D2; }
+
+.bottom.menu ul > li a {
+  background-color: #8FD8D2;
+  color: #ffffff; }
+
+.copy-right {
+  background: #FEDCD2;
+  padding: 10px;
+  color: #736e6c;
+  text-align: center; }
+
+/*helper classes to do general things*/
+.pad-top-50 {
+  padding-top: 50px; }
+
+.pad-bottom-50 {
+  padding-bottom: 50px; }
+
+.centered {
+  margin: 0 auto; }
+
+img.centered {
+  display: table; }
+
+.right-floated {
+  float: right; }
+
+.no-margin {
+  margin: 0; }
+
+.wrap-children {
+  display: table;
+  position: relative; }
+
+.text-center {
+  text-align: center; }
+
+.overlay-text {
+  position: absolute;
+  margin: 0;
+  top: 35%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 1px #151515; }
+
+.circle-icon {
+  background: white;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px dashed #0d0e0e; }

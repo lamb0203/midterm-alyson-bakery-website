@@ -1,0 +1,189 @@
+@import 'responsive';
+
+/* Global Sass variable */
+$peach-color: #FEDCD2;
+
+$primary-color: #DF744A;
+
+$secondary-color: #8FD8D2;
+
+$pink-color: #f5b2b6;
+
+$white-color: #ffffff;
+
+
+/*
+
+This css will allow our pages to have color and a fancy appearance
+
+*/
+
+
+/* reset body margin/pagging and set default font*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+}
+
+header, aside, nav, article, footer {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #eb8087;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  background-image: url('../img/banners/logo-background.jpg');
+}
+
+/*style for card items*/
+.card{
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  border-radius: 3px;
+  border-bottom: 2px solid $pink-color;
+  background-color: $white-color;
+  margin: 10px;
+}
+.card img{
+  border-radius: 3px 3px 0 0;
+}
+.card .caption{
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.card .content{
+  font-size: 14px;
+  padding: 30px;
+}
+.card.contact-info{
+  padding: 10px;
+  text-align: center;
+}
+.card.shrink{
+  margin: 40px;
+}
+/*style for form inputs*/
+.form input, .form textarea{
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #eb8087;
+}
+
+.button{
+  border: none;
+  background-color:#ef2525;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/*general menu css*/
+.menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul>li {
+  padding: 1rem;
+  float: left;
+  display: block;
+}
+
+.top.menu ul>li a, .bottom.menu ul>li a {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: white;
+  display: block;
+}
+
+/* lets make top and bottom menu look a bit different*/
+.top.menu ul>li a:hover, .top.menu ul>li a.active {
+  color: $secondary-color;
+}
+
+.top.menu {
+  background-color: $secondary-color;
+}
+
+.bottom.menu {
+  background-color: $secondary-color;
+}
+
+.bottom.menu ul>li a {
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
+.copy-right {
+  background: $peach-color;
+  padding: 10px;
+  color: #736e6c;
+  text-align: center;
+}
+
+/*helper classes to do general things*/
+.pad-top-50{
+  padding-top: 50px;
+}
+.pad-bottom-50{
+  padding-bottom: 50px;
+}
+.centered {
+  margin: 0 auto;
+}
+img.centered{
+  display: table;
+}
+.right-floated{
+  float: right;
+}
+.no-margin {
+  margin: 0;
+}
+
+.wrap-children {
+  display: table;
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  margin: 0;
+  top: 35%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 1px #151515;
+}
+.circle-icon{
+  background: white;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px dashed #0d0e0e;
+}
