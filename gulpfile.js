@@ -1,7 +1,7 @@
 // Declare global scope variables.
 const gulp = require('gulp') // load the gulp library
 const sass = require('gulp-sass') // load the gulp-sass compiler library
-const sassPath = './scss/**/*.scss' // the folder(s) with our Sass source files
+const sassPath = './scss/**/*.scss' // the folder(s) with Sass source files
 const postcss = require('gulp-postcss') // load the postcss library
 const autoprefixer = require('autoprefixer') // load the autoprefixer plugin
 const cssnano = require('cssnano') // load the cssnano plugin
@@ -18,7 +18,7 @@ gulp.task('sass', function () {
   ]
   // Now lets tell gulp what to do ...
   return gulp
-    .src(sassPath) // where to find the Sass source files (use our variable)
+    .src(sassPath) // where to find the Sass source files (use variable)
     .pipe(sass()) // forward those files to the compiler
     .pipe(gulp.dest('./css')) // where to output the interim compiled css
     .pipe(postcss(plugins)) // apply the PostCSS plugins
