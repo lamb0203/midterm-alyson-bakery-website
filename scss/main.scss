@@ -9,12 +9,12 @@ $secondary-color: #8FD8D2;
 
 $pink-color: #f5b2b6;
 
-$white-color: #ffffff;
+$white-color: #080505;
 
 
 /*
 
-This css will allow our pages to have color and a fancy appearance
+This css will allow the pages to have color and a fancy appearance
 
 */
 
@@ -28,15 +28,24 @@ body {
   background-color: #f8f8f8;
 }
 
-header, aside, nav, article, footer {
+header,
+aside,
+nav,
+article,
+footer {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #eb8087;
 }
 
-a{
+a {
   color: $primary-color;
   text-decoration: none;
 }
@@ -46,44 +55,51 @@ a{
 }
 
 /*style for card items*/
-.card{
-  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+.card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
   border-radius: 3px;
   border-bottom: 2px solid $pink-color;
   background-color: $white-color;
   margin: 10px;
 }
-.card img{
+
+.card img {
   border-radius: 3px 3px 0 0;
 }
-.card .caption{
+
+.card .caption {
   margin: 0;
   padding: 10px;
   font-weight: bold;
   text-align: center;
 }
-.card .content{
+
+.card .content {
   font-size: 14px;
   padding: 30px;
 }
-.card.contact-info{
+
+.card.contact-info {
   padding: 10px;
   text-align: center;
 }
-.card.shrink{
+
+.card.shrink {
   margin: 40px;
 }
+
 /*style for form inputs*/
-.form input, .form textarea{
+.form input,
+.form textarea {
   padding: 15px;
   width: 100%;
   border-radius: 3px;
   border: 1px solid #eb8087;
 }
 
-.button{
+.button {
   border: none;
-  background-color:#ef2525;
+  background-color: #ef2525;
   border-radius: 3px;
   padding: 10px 15px;
   font-weight: bold;
@@ -103,7 +119,8 @@ a{
   display: block;
 }
 
-.top.menu ul>li a, .bottom.menu ul>li a {
+.top.menu ul>li a,
+.bottom.menu ul>li a {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -114,7 +131,8 @@ a{
 }
 
 /* lets make top and bottom menu look a bit different*/
-.top.menu ul>li a:hover, .top.menu ul>li a.active {
+.top.menu ul>li a:hover,
+.top.menu ul>li a.active {
   color: $secondary-color;
 }
 
@@ -139,21 +157,26 @@ a{
 }
 
 /*helper classes to do general things*/
-.pad-top-50{
+.pad-top-50 {
   padding-top: 50px;
 }
-.pad-bottom-50{
+
+.pad-bottom-50 {
   padding-bottom: 50px;
 }
+
 .centered {
   margin: 0 auto;
 }
-img.centered{
+
+img.centered {
   display: table;
 }
-.right-floated{
+
+.right-floated {
   float: right;
 }
+
 .no-margin {
   margin: 0;
 }
@@ -177,7 +200,8 @@ img.centered{
   color: white;
   text-shadow: 2px 1px #151515;
 }
-.circle-icon{
+
+.circle-icon {
   background: white;
   height: 100px;
   width: 100px;
