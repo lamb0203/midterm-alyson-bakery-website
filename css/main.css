@@ -8,95 +8,147 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
 /* recalculate element width and height if they have paddings or borders */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* conatiner css,  mobile first margin */
 .container {
-  margin: 0; }
+  margin: 0;
+}
 
 /* row css, default padding */
 .row {
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 /*float all columns*/
 [class*="col-"] {
-  float: left; }
+  float: left;
+}
 
 /* For mobile phones (default): */
-[class*="col-"], .page-wrapper, .full-width {
-  width: 100%; }
+[class*="col-"],
+.page-wrapper,
+.full-width {
+  width: 100%;
+}
 
 /* make images resposive */
 .img-responsive {
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 /* helper class: clear float effect on parent element, clear all rows by default as well. */
-.clearfix::after, .row:after {
+.clearfix::after,
+.row:after {
   content: "";
   clear: both;
-  display: table; }
+  display: table;
+}
 
-.menu ul > li {
-  width: 100%; }
+.menu ul>li {
+  width: 100%;
+}
 
-.top.menu ul > li a {
-  font-size: 1rem; }
+.top.menu ul>li a {
+  font-size: 1rem;
+}
 
 .logo {
-  width: 70%; }
+  width: 70%;
+}
 
 h1.larger-font {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 h2.larger-font {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 /*Desktop breakpoint*/
 @media only screen and (min-width: 768px) {
+
   /* styles For desktop: */
   .container {
-    margin: 0 2rem; }
+    margin: 0 2rem;
+  }
+
   .page-wrapper {
-    max-width: 80rem; }
-  .menu ul > li,
+    max-width: 80rem;
+  }
+
+  .menu ul>li,
   .logo {
-    width: 250px; }
-  .top.menu ul > li a {
-    font-size: 1.4rem; }
+    width: 250px;
+  }
+
+  .top.menu ul>li a {
+    font-size: 1.4rem;
+  }
+
   h1.larger-font {
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+  }
+
   h2.larger-font {
-    font-size: 2rem; }
+    font-size: 2rem;
+  }
+
   .col-1 {
-    width: 8.33%; }
+    width: 8.33%;
+  }
+
   .col-2 {
-    width: 16.66%; }
+    width: 16.66%;
+  }
+
   .col-3 {
-    width: 25%; }
+    width: 25%;
+  }
+
   .col-4 {
-    width: 33.33%; }
+    width: 33.33%;
+  }
+
   .col-5 {
-    width: 41.66%; }
+    width: 41.66%;
+  }
+
   .col-6 {
-    width: 50%; }
+    width: 50%;
+  }
+
   .col-7 {
-    width: 58.33%; }
+    width: 58.33%;
+  }
+
   .col-8 {
-    width: 66.66%; }
+    width: 66.66%;
+  }
+
   .col-9 {
-    width: 75%; }
+    width: 75%;
+  }
+
   .col-10 {
-    width: 83.33%; }
+    width: 83.33%;
+  }
+
   .col-11 {
-    width: 91.66%; }
+    width: 91.66%;
+  }
+
   .col-12 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 /* Global Sass variable */
 /*
 
-This css will allow our pages to have color and a fancy appearance
+This css will allow  pages to have color and a fancy appearance
 
 */
 /* reset body margin/pagging and set default font*/
@@ -104,20 +156,34 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #f8f8f8; }
+  background-color: #c38d9e;
+}
 
-header, aside, nav, article, footer {
-  display: block; }
+header,
+aside,
+nav,
+article,
+footer {
+  display: block;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  color: #eb8087; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eb8087;
+}
 
 a {
   color: #DF744A;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .logo-wrapper {
-  background-image: url("../img/banners/logo-background.jpg"); }
+  background-image: url("../img/banners/logo-background.jpg");
+}
 
 /*style for card items*/
 .card {
@@ -125,34 +191,42 @@ a {
   border-radius: 3px;
   border-bottom: 2px solid #f5b2b6;
   background-color: #ffffff;
-  margin: 10px; }
+  margin: 10px;
+}
 
 .card img {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 3px 3px 0 0;
+}
 
 .card .caption {
   margin: 0;
   padding: 10px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+}
 
 .card .content {
   font-size: 14px;
-  padding: 30px; }
+  padding: 30px;
+}
 
 .card.contact-info {
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 .card.shrink {
-  margin: 40px; }
+  margin: 40px;
+}
 
 /*style for form inputs*/
-.form input, .form textarea {
+.form input,
+.form textarea {
   padding: 15px;
   width: 100%;
   border-radius: 3px;
-  border: 1px solid #eb8087; }
+  border: 1px solid #eb8087;
+}
 
 .button {
   border: none;
@@ -161,72 +235,91 @@ a {
   padding: 10px 15px;
   font-weight: bold;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*general menu css*/
 .menu ul {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
-.menu ul > li {
+.menu ul>li {
   padding: 1rem;
   float: left;
-  display: block; }
+  display: block;
+}
 
-.top.menu ul > li a, .bottom.menu ul > li a {
+.top.menu ul>li a,
+.bottom.menu ul>li a {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   border-radius: 3px;
   background-color: white;
-  display: block; }
+  display: block;
+}
 
 /* lets make top and bottom menu look a bit different*/
-.top.menu ul > li a:hover, .top.menu ul > li a.active {
-  color: #8FD8D2; }
+.top.menu ul>li a:hover,
+.top.menu ul>li a.active {
+  color: #8FD8D2;
+}
 
 .top.menu {
-  background-color: #8FD8D2; }
+  background-color: #8FD8D2;
+}
 
 .bottom.menu {
-  background-color: #8FD8D2; }
-
-.bottom.menu ul > li a {
   background-color: #8FD8D2;
-  color: #ffffff; }
+}
+
+.bottom.menu ul>li a {
+  background-color: #8FD8D2;
+  color: #ffffff;
+}
 
 .copy-right {
   background: #FEDCD2;
   padding: 10px;
   color: #736e6c;
-  text-align: center; }
+  text-align: center;
+}
 
 /*helper classes to do general things*/
 .pad-top-50 {
-  padding-top: 50px; }
+  padding-top: 50px;
+}
 
 .pad-bottom-50 {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+}
 
 .centered {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 img.centered {
-  display: table; }
+  display: table;
+}
 
 .right-floated {
-  float: right; }
+  float: right;
+}
 
 .no-margin {
-  margin: 0; }
+  margin: 0;
+}
 
 .wrap-children {
   display: table;
-  position: relative; }
+  position: relative;
+}
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
 .overlay-text {
   position: absolute;
@@ -236,7 +329,8 @@ img.centered {
   left: 0;
   text-align: center;
   color: white;
-  text-shadow: 2px 1px #151515; }
+  text-shadow: 2px 1px #151515;
+}
 
 .circle-icon {
   background: white;
@@ -246,4 +340,5 @@ img.centered {
   margin: 0 auto;
   text-align: center;
   border-radius: 50%;
-  border: 2px dashed #0d0e0e; }
+  border: 2px dashed #0d0e0e;
+}
