@@ -148,7 +148,7 @@ h2.larger-font {
 /* Global Sass variable */
 /*
 
-This css will allow  pages to have color and a fancy appearance
+This css will allow our pages to have color and a fancy appearance
 
 */
 /* reset body margin/pagging and set default font*/
@@ -156,7 +156,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #c38d9e;
+  background-color: #f8f8f8;
 }
 
 header,
