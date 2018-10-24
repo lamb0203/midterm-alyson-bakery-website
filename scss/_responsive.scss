@@ -1,7 +1,6 @@
-
 /*
 
-This css will allow our pages to behave resposively as defined by our breakpoints
+This css will allow the pages to behave resposively as defined by our breakpoints
 
 Resources:
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
@@ -10,77 +9,139 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 /* recalculate element width and height if they have paddings or borders */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  /* conatiner css,  mobile first margin */
-  .container {
-    margin: 0;
-  }
+/* container css,  mobile first margin */
+.container {
+  margin: 0;
+}
 
-  /* row css, default padding */
-  .row {
-    padding: 1rem;
-  }
-  /*float all columns*/
-[class*="col-"]
-{
+/* row css, default padding */
+.row {
+  padding: 1rem;
+}
+
+/*float all columns*/
+[class*="col-"] {
   float: left;
 }
+
 /* For mobile phones (default): */
-[class*="col-"], .page-wrapper,.full-width{
+[class*="col-"],
+.page-wrapper,
+.full-width {
   width: 100%;
 }
 
-/* make images resposive */
+/* make images responsive */
 .img-responsive {
   width: 100%;
   height: auto;
 }
 
 /* helper class: clear float effect on parent element, clear all rows by default as well. */
-.clearfix::after,.row:after {
-    content: "";
-    clear: both;
-    display: table;
+.clearfix::after,
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.menu ul > li{
+.menu ul>li {
   width: 100%;
 }
 
-.top.menu ul > li a{
+.top.menu ul>li a {
   font-size: 1rem;
 }
-.logo{
+
+.logo {
   width: 70%;
 }
-h1.larger-font{
+
+h1.larger-font {
   font-size: 1.4rem;
 }
-h2.larger-font{
+
+h2.larger-font {
   font-size: 1.2rem;
 }
+
 /*Desktop breakpoint*/
 @media only screen and (min-width: 768px) {
-   /* styles For desktop: */
-   .container {margin: 0 2rem;}
-  .page-wrapper {max-width: 80rem;}
-  .menu ul > li,
-  .logo {width: 250px;}
-  .top.menu ul > li a {font-size: 1.4rem;}
-  h1.larger-font{font-size: 2.8rem;}
-  h2.larger-font{font-size: 2rem;}
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+  /* styles For desktop: */
+  .container {
+    margin: 0 2rem;
+  }
+
+  .page-wrapper {
+    max-width: 80rem;
+  }
+
+  .menu ul>li,
+  .logo {
+    width: 250px;
+  }
+
+  .top.menu ul>li a {
+    font-size: 1.4rem;
+  }
+
+  h1.larger-font {
+    font-size: 2.8rem;
+  }
+
+  h2.larger-font {
+    font-size: 2rem;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }

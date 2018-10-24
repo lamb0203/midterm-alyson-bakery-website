@@ -1,6 +1,6 @@
 /*
 
-This css will allow our pages to behave resposively as defined by our breakpoints
+This css will allow the pages to behave resposively as defined by our breakpoints
 
 Resources:
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
@@ -11,7 +11,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
   box-sizing: border-box;
 }
 
-/* conatiner css,  mobile first margin */
+/* container css,  mobile first margin */
 .container {
   margin: 0;
 }
@@ -148,7 +148,7 @@ h2.larger-font {
 /* Global Sass variable */
 /*
 
-This css will allow our pages to have color and a fancy appearance
+This css will allow all pages to have color and a fancy appearance
 
 */
 /* reset body margin/pagging and set default font*/
@@ -261,7 +261,7 @@ a {
   display: block;
 }
 
-/* lets make top and bottom menu look a bit different*/
+/* this helps the top and bottom menu look a bit different*/
 .top.menu ul>li a:hover,
 .top.menu ul>li a.active {
   color: #8FD8D2;
